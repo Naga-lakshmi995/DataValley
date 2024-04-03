@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+
+<h2>Sign up</h2>
+
+<form action="/submit_form" method="post" enctype="multipart/form-data">
+    <label for="full-name">Name:</label><br>
+    <input type="text" id="full-name" name="fullname" placeholder="Full name" required maxlength="100"><br><br>
+
+    <label for="email">email:</label><br>
+    <input type="email" id="email" name="email" placeholder="gmailid" required maxlength="100"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="8 characters" required minlength="8" maxlength="20"><br><br>
+
+    <label for="confirm-password">Confirm Password:</label><br>
+    <input type="password" id="confirm-password" name="confirmpassword" placeholder="8 characters" required minlength="8" maxlength="20"><br><br>
+
+    <label for="dob">Date Of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label for="photo">Insert your photo:</label><br>
+    <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+    <label for="resume">Insert your Resume:</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+    <label for="security-question">Security Question:</label><br>
+    <select id="security-question" name="securityquestion">
+        <option value="pet">Select</option>
+        <option value="mother">What is your mother's maiden name?</option>
+        <option value="birth">What city were you born in?</option>
+    </select><br><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions</label><br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>
